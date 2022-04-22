@@ -1,0 +1,25 @@
+class Usuarie {
+var atuendos = #{};
+
+method crearAtuendos(tipo,categoria,material,colorPrimario,colorSecundario){
+prenda = new Prenda(tipo,categoria,material,colorPrimario,colorSecundario);
+atuendo = new Atuendo();
+atuendo.add(prenda)
+atuendos.add(atuendo);
+}
+}
+
+
+class Atuendo {
+var Prendas = #{};
+method crearPrenda() = #{};
+}
+
+
+class Prenda {
+const tipo;
+const categoria;
+const material;
+const colorPrimario;
+const colorSecundario;
+}
